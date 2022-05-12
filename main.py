@@ -1,3 +1,15 @@
+import smtplib
+import random
+import datetime as dt
+import pandas
+
+today = dt.datetime(month=5, day=11, year=2022)
+data = pandas.read_csv("birthdays.csv")
+data_dict = data.to_dict()
+
+with open("birthdays.csv", mode="r") as data_file:
+    data.readlines()
+
 ##################### Normal Starting Project ######################
 
 # 1. Update the birthdays.csv with your friends & family's details. 
